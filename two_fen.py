@@ -17,9 +17,9 @@ def main(n, a):
             middle = (low+high) // 2
             guess = n[middle]
             if guess < a:
-                low += 1
+                low = middle
             elif guess > a:
-                high -= 1
+                high = middle
             else:
                 return middle
 
